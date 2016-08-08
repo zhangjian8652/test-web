@@ -57,7 +57,7 @@ public class TestSign {
         int total_fee = 1;// 订单总金额，单位为分，详见支付金额
         String spbill_create_ip = "125.71.90.135";// APP和网页支付提交用户端ip，Native支付填调用微信支付API的机器IP。
         String notify_url = "http://zhangjian.iok.la/wechat/test/pay";// 接收微信支付异步通知回调地址，通知url必须为直接可访问的url，不能携带参数。
-        String trade_type = "NATIVE";// 取值如下：JSAPI，NATIVE，APP，详细说明见参数规定,JSAPI--公众号支付、NATIVE--原生扫码支付、APP--app支付，统一下单接口trade_type的传参可参考这里 MICROPAY--刷卡支付，刷卡支付有单独的支付接口，不调用统一下单接口
+        String trade_type = "JSAPI";// 取值如下：JSAPI，NATIVE，APP，详细说明见参数规定,JSAPI--公众号支付、NATIVE--原生扫码支付、APP--app支付，统一下单接口trade_type的传参可参考这里 MICROPAY--刷卡支付，刷卡支付有单独的支付接口，不调用统一下单接口
 
 
         SortedMap<Object, Object> parameters = new TreeMap<Object, Object>();
@@ -69,7 +69,7 @@ public class TestSign {
         parameters.put("mch_id", mch_id);
         parameters.put("nonce_str", nonce_str);
         parameters.put("notify_url", notify_url);
-      //  parameters.put("openid", openid);
+        parameters.put("openid", openid);
         parameters.put("out_trade_no", out_trade_no);
         parameters.put("spbill_create_ip", spbill_create_ip);
         parameters.put("total_fee", total_fee);
