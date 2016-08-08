@@ -6,6 +6,8 @@ import com.test.weixin.pay.util.CommonUtil;
 import com.test.weixin.pay.util.WechatPaymentUtil;
 
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -49,11 +51,13 @@ public class TestSign {
 
         //必传
         String body = "aaa-aaa";
-        String out_trade_no = "20160804174446";// 	商户系统内部的订单号,32个字符内、可包含字母, 其他说明见商户订单号
+
+        String ouno = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date());
+        String out_trade_no = ouno;// 	商户系统内部的订单号,32个字符内、可包含字母, 其他说明见商户订单号"20160808174447"
         int total_fee = 1;// 订单总金额，单位为分，详见支付金额
         String spbill_create_ip = "125.71.90.135";// APP和网页支付提交用户端ip，Native支付填调用微信支付API的机器IP。
-        String notify_url = "http://zhifu.woqu.sc.cn/wechat/test/pay/";// 接收微信支付异步通知回调地址，通知url必须为直接可访问的url，不能携带参数。
-        String trade_type = "JSAPI";// 取值如下：JSAPI，NATIVE，APP，详细说明见参数规定,JSAPI--公众号支付、NATIVE--原生扫码支付、APP--app支付，统一下单接口trade_type的传参可参考这里 MICROPAY--刷卡支付，刷卡支付有单独的支付接口，不调用统一下单接口
+        String notify_url = "http://zhangjian.iok.la/wechat/test/pay";// 接收微信支付异步通知回调地址，通知url必须为直接可访问的url，不能携带参数。
+        String trade_type = "NATIVE";// 取值如下：JSAPI，NATIVE，APP，详细说明见参数规定,JSAPI--公众号支付、NATIVE--原生扫码支付、APP--app支付，统一下单接口trade_type的传参可参考这里 MICROPAY--刷卡支付，刷卡支付有单独的支付接口，不调用统一下单接口
 
 
         SortedMap<Object, Object> parameters = new TreeMap<Object, Object>();
@@ -65,7 +69,7 @@ public class TestSign {
         parameters.put("mch_id", mch_id);
         parameters.put("nonce_str", nonce_str);
         parameters.put("notify_url", notify_url);
-        parameters.put("openid", openid);
+      //  parameters.put("openid", openid);
         parameters.put("out_trade_no", out_trade_no);
         parameters.put("spbill_create_ip", spbill_create_ip);
         parameters.put("total_fee", total_fee);

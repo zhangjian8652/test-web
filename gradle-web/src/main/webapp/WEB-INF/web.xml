@@ -17,7 +17,7 @@
 
     <servlet-mapping>
         <servlet-name>accessToken</servlet-name>
-        <url-pattern>/wechat/test/token/</url-pattern>
+        <url-pattern>/wechat/test/token</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -27,7 +27,7 @@
 
     <servlet-mapping>
         <servlet-name>openId</servlet-name>
-        <url-pattern>/wechat/test/openid/</url-pattern>
+        <url-pattern>/wechat/test/openid</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -37,7 +37,9 @@
 
     <servlet-mapping>
         <servlet-name>pay</servlet-name>
-        <url-pattern>/wechat/test/pay/</url-pattern>
+        <url-pattern>/wechat/test/pay</url-pattern>
     </servlet-mapping>
+
+
 
 </web-app>

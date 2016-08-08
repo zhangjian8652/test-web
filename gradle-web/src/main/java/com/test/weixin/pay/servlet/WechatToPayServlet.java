@@ -23,17 +23,19 @@ public class WechatToPayServlet extends HttpServlet{
 
         SortedMap<Object,Object> params = new TreeMap<Object, Object>();
 
+        String uuid = UUID.randomUUID().toString().replace("-","");
+        long timestamp = System.currentTimeMillis();
         params.put("appId","wx9ba36613cc2989c5");
-        params.put("timeStamp",System.currentTimeMillis());
-        params.put("nonceStr",UUID.randomUUID().toString().replace("-",""));
-        params.put("package","prepay_id=wx20160805153913a49b094ce70941518785");
+        params.put("timeStamp",timestamp);
+        params.put("nonceStr",uuid);
+        params.put("package","prepay_id=wx20160808102959383aefea560226352594");
         params.put("signType","MD5");
 
         String sgn = WechatPaymentUtil.createSign("UTF-8",params,key);
         req.setAttribute("appId","wx9ba36613cc2989c5");
-        req.setAttribute("timeStamp",System.currentTimeMillis());
-        req.setAttribute("nonceStr", UUID.randomUUID().toString().replace("-",""));
-        req.setAttribute("package","prepay_id=wx20160805153913a49b094ce70941518785");
+        req.setAttribute("timeStamp",timestamp);
+        req.setAttribute("nonceStr", uuid);
+        req.setAttribute("package","prepay_id=wx20160808102959383aefea560226352594");
         req.setAttribute("signType","MD5");
         req.setAttribute("paySign", sgn);
 
