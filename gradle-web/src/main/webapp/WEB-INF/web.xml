@@ -17,29 +17,23 @@
 
     <servlet-mapping>
         <servlet-name>accessToken</servlet-name>
-        <url-pattern>/wechat/test/token</url-pattern>
+        <url-pattern>/wechat/payment/order</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>openId</servlet-name>
-        <servlet-class>com.test.weixin.pay.servlet.WechatOpenIdServlet</servlet-class>
-    </servlet>
 
-    <servlet-mapping>
-        <servlet-name>openId</servlet-name>
-        <url-pattern>/wechat/test/openid</url-pattern>
-    </servlet-mapping>
+    <filter>
+        <filter-name>wechat-payment</filter-name>
+        <filter-class>com.test.weixin.pay.filter.WechatPaymentFilter</filter-class>
+        <init-param>
+            <param-name>afterAuthURI</param-name>
+            <param-value>/wechat/payment/order</param-value>
+        </init-param>
+    </filter>
 
-    <servlet>
-        <servlet-name>pay</servlet-name>
-        <servlet-class>com.test.weixin.pay.servlet.WechatToPayServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>pay</servlet-name>
-        <url-pattern>/wechat/test/pay</url-pattern>
-    </servlet-mapping>
-
+    <filter-mapping>
+        <filter-name>wechat-payment</filter-name>
+        <url-pattern>/wechat/payment/*</url-pattern>
+    </filter-mapping>
 
 
 </web-app>

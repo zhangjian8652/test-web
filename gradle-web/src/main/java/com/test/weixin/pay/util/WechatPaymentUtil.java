@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class WechatPaymentUtil {
 
-    private static String CHARACTER_ENCODING_UTF8 = "UTF-8";
+    public static String CHARACTER_ENCODING_UTF8 = "UTF-8";
 
     /**
      * 将WechatOrder转换成xml参数并且根据ASCII排序，加密生成SIGN

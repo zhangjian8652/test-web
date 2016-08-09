@@ -2,6 +2,7 @@ package com.sign.test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.test.weixin.pay.util.CommonUtil;
 
 import java.util.SortedMap;
@@ -30,5 +31,9 @@ public class TestMapToXML {
 
         parameters.put("json","<!CDATA[" +params + "]>");
         System.out.println(CommonUtil.converterMapToXml(parameters));
+
+        XmlMapper xmlMapper = new XmlMapper();
+        String xmlParms = xmlMapper.writeValueAsString(parameters);
+
     }
 }

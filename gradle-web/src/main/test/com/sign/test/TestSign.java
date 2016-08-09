@@ -76,6 +76,9 @@ public class TestSign {
         parameters.put("trade_type", trade_type);
 
 
+
+
+
         String characterEncoding = "UTF-8";
 
         String mySign = WechatPaymentUtil.createSign(characterEncoding, parameters, key);

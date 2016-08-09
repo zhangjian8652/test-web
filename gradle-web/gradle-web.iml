@@ -39,59 +39,63 @@
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Gradle: commons-httpclient:commons-httpclient:3.1" level="project" />
-    <orderEntry type="library" name="Gradle: xfire:opensaml:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Gradle: jmock:jmock:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: xfire:opensaml:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-all:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:bcprov-jdk15:133" level="project" />
+    <orderEntry type="library" name="Gradle: xerces:xercesImpl:2.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: stax-utils:stax-utils:snapshot-20040917" level="project" />
     <orderEntry type="library" name="Gradle: commons-discovery:commons-discovery:0.2" level="project" />
     <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.0.b2" level="project" />
-    <orderEntry type="library" name="Gradle: xerces:xercesImpl:2.7.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:bcprov-jdk15:133" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-all:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Gradle: wss4j:wss4j:1.5.1" level="project" />
     <orderEntry type="library" name="Gradle: xml-security:xmlsec:1.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: javax.mail:mail:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Gradle: wsdl4j:wsdl4j:1.6.1" level="project" />
-    <orderEntry type="library" name="Gradle: jaxen:jaxen:1.1-beta-9" level="project" />
-    <orderEntry type="library" name="Gradle: stax:stax-api:1.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: xfire:xfire-jsr181-api:1.0-M1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.mail:mail:1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-aegis:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: jaxen:jaxen:1.1-beta-9" level="project" />
+    <orderEntry type="library" name="Gradle: xfire:xfire-jsr181-api:1.0-M1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-ws-security:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: jdom:jdom:1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.woodstox:wstx-asl:3.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: commons-attributes:commons-attributes-api:2.1" level="project" />
-    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.7.0" level="project" />
-    <orderEntry type="library" name="Gradle: javax.xml.ws:jaxws-api:2.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-ws-security:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-core:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-jaxb2:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-attributes:commons-attributes-api:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.ws:jaxws-api:2.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.7.0" level="project" />
     <orderEntry type="library" name="Gradle: xmlbeans:xbean:2.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.xbean:xbean-spring:2.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-jaxb2:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-java5:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: javax.xml.soap:saaj-api:1.3" level="project" />
-    <orderEntry type="library" name="Gradle: xfire:saaj-impl:1.3" level="project" />
-    <orderEntry type="library" name="Gradle: qdox:qdox:1.5" level="project" />
-    <orderEntry type="library" name="Gradle: ant:ant:1.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-xmlbeans:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-xjc:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-generator:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: xerces:xmlParserAPIs:2.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-xmlbeans:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: xfire:saaj-impl:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.soap:saaj-api:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xbean:xbean-spring:2.8" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-annotations:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: qdox:qdox:1.5" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.0" level="project" />
+    <orderEntry type="library" name="Gradle: ant:ant:1.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-xjc:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: xerces:xmlParserAPIs:2.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-jaxws:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-spring:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: bouncycastle:bcprov-jdk15:133" level="project" />
     <orderEntry type="library" name="Gradle: net.java.dev.stax-utils:stax-utils:20040917" level="project" />
     <orderEntry type="library" name="Gradle: javax.xml:jaxb-api:2.0" level="project" />
     <orderEntry type="library" name="Gradle: javax.xml.bind:jsr173_api:1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-impl:2.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-spring:1.2.6" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.messaging.saaj:saaj-impl:1.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.xfire:xfire-jaxws:1.2.6" level="project" />
-    <orderEntry type="library" name="Gradle: stax-utils:stax-utils:snapshot-20040917" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.6.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.6.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.14" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.1" level="project" />
   </component>
 </module>

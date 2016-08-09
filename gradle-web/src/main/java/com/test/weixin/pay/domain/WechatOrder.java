@@ -8,6 +8,8 @@ public class WechatOrder {
 
     public static String TRADE_TYPE_JSAPI = "JSAPI";
     public static String TRADE_TYPE_NATIVE = "NATIVE";
+    public static String DEVICE_INFO_WEB = "WEB";
+
 
     private String key;////API KEY认证
     private String appid;// 微信支付分配的公众号ID
